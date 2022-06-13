@@ -1,1 +1,1 @@
-hello
+Làm trang nào thì tạo nhánh trang đó nha!

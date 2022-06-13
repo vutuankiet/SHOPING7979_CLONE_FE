@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Đội của tôi</title>
+
+  <link rel="stylesheet" href="../assets/custom/css/style.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap_v_4.6/css/bootstrap.min.css">
+
+</head>
+<body class="bg-info">
+<div class="sticky-top header-top bg-warning">
+  <div class="container-fluid py-2">
+    <div class="row">
+      <div class="col-12 col-md-4 m-auto">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <h6 class="mb-0">Đội của tôi</h6>
+            <a href="#">Quy tắc</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-white">
+  <div class="container-fluid">
+    <div class="row justify-content-center frontend-notification">
+      <div class="col-md-4 col-12">
+        <div class="d-flex justify-content-center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-white pt-2 pb-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4 m-auto">
+        <div class="code-ref shadow rounded-3 p-3 mb-3">
+          <h3>Mã giới thiệu</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <h4 class="text-success">088834</h4>
+            <button class="btn btn-warning" onclick="copy('088834')">SAO CHÉP</button>
+          </div>
+        </div>
+
+        <div class="code-ref shadow rounded-3 p-3 mb-3">
+          <h3>Mã tham chiếu</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="text-success ref-url">http://shoping7979.com/088834</h6>
+            <button style="min-width: 100px" class="btn btn-warning" onclick="copy('http://shoping7979.com/088834')">SAO CHÉP</button>
+          </div>
+          <ul class="my-ref-social d-flex justify-content-between pt-3">
+            <li>
+              <img height="20" src="http://shoping7979.com/frontend/images/team/download.png" alt="">
+              <span>WhatApp</span>
+            </li>
+            <li>
+              <img height="20" src="http://shoping7979.com/frontend/images/team/download3.png" alt="">
+              <span>SMS</span>
+            </li>
+            <li>
+              <img height="20" src="http://shoping7979.com/frontend/images/team/download4.png" alt="">
+              <span>Email</span>
+            </li>
+            <li>
+              <img height="20" src="http://shoping7979.com/frontend/images/team/download5.png" alt="">
+              <span>Mails</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member shadow rounded-3 p-3 mb-3">
+          <h3>Thành viên của đội</h3>
+          <ul class="d-flex justify-content-between">
+            <li>
+              <strong>Trực tiếp</strong>
+              <br>
+              <img src="http://shoping7979.com/frontend/images/team/bigUser1.png" height="20" alt="">
+              <span>0</span>
+            </li>
+            <li>
+              <strong>Gián tiếp</strong>
+              <br>
+              <img src="http://shoping7979.com/frontend/images/team/bigUser1.png" height="20" alt="">
+              <span>0</span>
+            </li>
+            <li>
+              <strong>Cấp 3</strong>
+              <br>
+              <img src="http://shoping7979.com/frontend/images/team/bigUser1.png" height="20" alt="">
+              <span>0</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-secondary w-100 rounded-pill">CHI TIẾT THÀNH VIÊN</a>
+        </div>
+        <div class="team-referral shadow rounded-3 p-3 mb-3">
+          <div class="title d-flex justify-content-between">
+            <h6>Phần thưởng giới thiệu</h6>
+            <a href="#">Chi tiết >></a>
+          </div>
+          <ul>
+            <li>Đạt đến mức <strong>T0</strong></li>
+            <li>Đạt tiêu chuẩn <strong>0</strong></li>
+            <li>Tổng phần thưởng <strong>0 VNĐ</strong></li>
+          </ul>
+          <strong>Cấp độ tiếp theo</strong>
+          <div class="progress-block d-flex align-items-center justify-content-between">
+            <div class="left">
+              <div class="progress-title text-warning small">
+                0/1 Đạt tiêu chuẩn
+                <span>5VNĐ</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5"></div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn-sm btn-secondary">Đảm nhận</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-referral shadow rounded-3 p-3 mb-5">
+          <div class="progress-title text-warning small">
+            <div class="title d-flex justify-content-between">
+              <h6>Phần thưởng của đội</h6>
+            </div>
+          </div>
+          <ul>
+            <li>Hôm nay: <strong>0 VNĐ</strong></li>
+            <li>Hôm qua: <strong>0 VNĐ</strong></li>
+            <li>Toàn bộ: <strong>0 VNĐ</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function copy(text) {
+    navigator.clipboard.writeText(text);
+    alert("Đã sao chép: " + text);
+  }
+</script>
+
+<div class="fixed-bottom nav-bottom bg-secondary">
+  <div class="row col-12 col-md-4 m-auto">
+    <div class="d-flex text-center justify-content-around py-2" style="flex: auto;">
+      <div class="icon icon-primary">
+        <a class="" href="#">
+          <img src="http://shoping7979.com/frontend/images/home.png" height="30" alt="">
+          <p>Trang chủ</p>
+        </a>
+      </div>
+      <div class="icon icon-primary">
+        <a class="" href="#">
+          <img src="http://shoping7979.com/frontend/images/cube-of-notes-stack.png" height="30" alt="">
+          <p>Đặt hàng</p>
+        </a>
+      </div>
+      <div class="icon icon-primary">
+        <a class="" href="./vip.html">
+          <img src="http://shoping7979.com/frontend/images/diamond.png" height="30" alt="">
+          <p>VIP</p>
+        </a>
+      </div>
+      <div class="icon icon-primary">
+        <a class="" href="./team.html">
+          <img src="http://shoping7979.com/frontend/images/group.png" height="30" alt="">
+          <p>Đội</p>
+        </a>
+      </div>
+      <div class="icon icon-primary">
+        <a class="" href="./account.html">
+          <img src="http://shoping7979.com/frontend/images/user.png" height="30" alt="">
+          <p>Tài khoản</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="../assets/custom/js/main.js"></script>
+
+</body>
+</html>
